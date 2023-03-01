@@ -17,30 +17,18 @@ const game = [
 ];
 
 function testScore(party) {
-    for(let i = 0; i < party.length; i++) {
+    for (let i = 0; i < party.length; i++) { // ==> Boucle qui parcourt les différents tableaux
         let firstTry = party[i][0]; // Premier tire d'une manche
         let secondTry = party[i][1]; // Second tire d'une manche 
-        
-        if(firstTry >= 1 && secondTry >= 1) {
-            if(firstTry+secondTry === 10) {
-                // console.log(party[i])
-                party[i+1][0] = party[i+1][0]*2;
+
+        if (firstTry >= 1 && secondTry >= 1) { // Systeme de calcul de score du Spare ==> Permet de vérifier qu'il s'agisse bien d'un spare et non d'un strike
+            if (firstTry + secondTry === 10) {
+                party[i + 1][0] = party[i + 1][0] * 2; // ==> Permet de x2 le la première valeur du tableau suivant
             }
         }
-
-
-
-        // Section Test
-
-        // if(firstTry+secondTry >= 10) {
-        //     console.log(`✔ OK ${firstTry} + ${secondTry} = ${firstTry+secondTry}`);
-        // }
-        // else{
-        //     console.log(`✖ Pas OK ${firstTry} + ${secondTry} = ${firstTry+secondTry}`);
-        // }
         console.log(party[i])
 
     }
-    
+
 }
 testScore(game);
