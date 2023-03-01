@@ -23,8 +23,8 @@ function testScore(party) {
         
         if(firstTry >= 1 && secondTry >= 1) {
             if(firstTry+secondTry === 10) {
-                console.log(party[i])
-                party[i+1][0]*2;
+                // console.log(party[i])
+                party[i+1][0] = party[i+1][0]*2;
             }
         }
 
@@ -38,7 +38,7 @@ function testScore(party) {
         // else{
         //     console.log(`✖ Pas OK ${firstTry} + ${secondTry} = ${firstTry+secondTry}`);
         // }
-        // console.log(party[i])
+        console.log(party[i])
 
     }
     
