@@ -1,0 +1,11 @@
+Calcul des points
+
+Le nombre de points est calculé à chaque frame :
+
+– si vous avez fait un “trou”, le nombre de points correspond au nombre de quilles tombées.
+– si vous avez fait un “spare”, vous obtiendrez 10 points plus le double de la boule suivante.
+– si vous avez fait un “strike” au premier lancer, vous obtiendrez 10 points plus le double des deux boules suivantes.
+
+Si vous réalisez un strike ou un spare au 10ème (donc dernier) tour, vous bénéficierez d’un ou deux lancer(s) supplémentaire(s).
+
+Le score maximum que vous pouvez donc atteindre au bowling est de 300 points (ce qui équivaut à 12 strikes successifs).
